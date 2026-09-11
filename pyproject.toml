@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docker-sweep"
+version = "0.1.0"
+description = "Smart, interactive Docker disk cleaner and reclaimable space analyzer."
+readme = "README.md"
+authors = [{ name = "ibrahimali111" }]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["docker", "cleanup", "disk-space", "cli", "devops"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[project.scripts]
+docker-sweep = "docker_sweep:main"
